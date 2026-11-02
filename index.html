@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>RAI MOTION — Create. Animate. Inspire.</title>
+  <meta name="description" content="RAI MOTION is a creative studio for VFX, CGI, 3D animation, professional video editing and motion graphics.">
+  <meta name="theme-color" content="#050505">
+  <meta name="color-scheme" content="dark">
+
+  <!-- Inline favicon (no extra file needed) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%237c3aed'/%3E%3Cpath d='M12 9l11 7-11 7z' fill='white'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://picsum.photos">
+  <link rel="stylesheet" href="style.css">
+
+  <noscript>
+    <style>.preloader{display:none !important}</style>
+  </noscript>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div class="preloader" id="preloader" role="status" aria-live="polite">
+    <div class="preloader__inner">
+      <div class="preloader__ring" aria-hidden="true"></div>
+      <p class="preloader__brand">RAI MOTION</p>
+      <p class="preloader__text">Loading experience</p>
+      <div class="preloader__bar" aria-hidden="true"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ===== CINEMATIC ANIMATED BACKGROUND ===== -->
+  <div class="bg" aria-hidden="true">
+    <span class="bg__orb bg__orb--1"></span>
+    <span class="bg__orb bg__orb--2"></span>
+    <span class="bg__orb bg__orb--3"></span>
+    <span class="bg__grid"></span>
+  </div>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-bar">
+        <a class="brand" href="#home" aria-label="RAI MOTION — back to top">
+          <span class="brand__mark" aria-hidden="true">
+            <svg class="icon icon--solid" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </span>
+          <span class="brand__text">RAI <b>MOTION</b></span>
+        </a>
+
+        <nav class="nav" id="primary-nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#home">Home</a></li>
+            <li><a class="nav__link" href="#about">About</a></li>
+            <li><a class="nav__link" href="#services">Services</a></li>
+            <li><a class="nav__link" href="#work">Our Work</a></li>
+            <li><a class="nav__link" href="#courses">Courses</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+          <a class="btn btn--primary btn--sm nav__cta" href="#contact">Get Started</a>
+        </nav>
+
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== A. HERO ===== -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow reveal"><span class="dot" aria-hidden="true"></span> RAI MOTION</p>
+          <h1 class="hero__title reveal" id="hero-title" style="--d:80ms">
+            WE CREATE <span class="grad">BEYOND IMAGINATION.</span>
+          </h1>
+          <p class="hero__tag reveal" style="--d:160ms">CREATE. ANIMATE. INSPIRE.</p>
+          <p class="hero__lead reveal" style="--d:220ms">
+            RAI MOTION is a creative studio crafting cinematic visuals — from VFX and CGI to 3D animation,
+            professional video editing and motion graphics. We turn bold ideas into stories people remember.
+          </p>
+          <div class="hero__actions reveal" style="--d:300ms">
+            <a class="btn btn--primary" href="#work">
+              Explore Our Work
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#contact">Get Started</a>
+          </div>
+          <ul class="hero__meta reveal" style="--d:380ms" aria-label="Studio specialties">
+            <li>VFX &amp; CGI</li>
+            <li>3D Animation</li>
+            <li>Video Editing</li>
+            <li>Motion Graphics</li>
+          </ul>
+        </div>
+
+        <!-- Decorative floating liquid-glass composition -->
+        <div class="hero__visual reveal" style="--d:200ms" aria-hidden="true">
+          <div class="hv-glow"></div>
+          <div class="hv-orb hv-orb--1" data-parallax="30"></div>
+          <div class="hv-orb hv-orb--2" data-parallax="-24"></div>
+
+          <div class="glass hv-panel" data-parallax="12">
+            <div class="hv-panel__bar"><i></i><i></i><i></i><span>SEQUENCE 01</span></div>
+            <div class="hv-panel__screen">
+              <span class="hv-scan"></span>
+              <div class="hv-play"><span><svg class="icon icon--solid" viewBox="0 0 24 24"><path d="M9 6.5v11l9-5.5z"/></svg></span></div>
+            </div>
+            <div class="hv-panel__meta"><span id="timecode">00:00:00:00</span><span>24 FPS</span></div>
+            <div class="hv-timeline">
+              <div class="hv-track"><span style="--w:3"></span><span class="alt" style="--w:2"></span><span style="--w:4"></span><span class="alt" style="--w:1"></span></div>
+              <div class="hv-track"><span class="alt" style="--w:2"></span><span style="--w:3"></span><span class="alt" style="--w:3"></span><span style="--w:2"></span></div>
+              <i class="hv-playhead"></i>
+            </div>
+          </div>
+
+          <div class="glass hv-chip hv-chip--a" data-parallax="26" style="--dur:7s">VFX</div>
+          <div class="glass hv-chip hv-chip--b" data-parallax="-20" style="--dur:9s;--delay:-3s">3D</div>
+          <div class="glass hv-chip hv-chip--c" data-parallax="34" style="--dur:8s;--delay:-5s">Motion</div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to the About section"><span></span></a>
+    </section>
+
+    <!-- ===== B. ABOUT ===== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about__copy">
+          <p class="eyebrow reveal">About Us</p>
+          <h2 class="section__title reveal" id="about-title" style="--d:80ms">
+            A studio built for <span class="grad">visual storytelling.</span>
+          </h2>
+          <p class="about__text reveal" style="--d:140ms">
+            RAI MOTION is a creative studio specializing in visual storytelling, VFX and CGI, 3D animation,
+            professional video editing and motion graphics.
+          </p>
+          <p class="about__text reveal" style="--d:200ms">
+            We combine technical craft with a cinematic eye, so every frame feels intentional —
+            whether it is a single shot or a full sequence.
+          </p>
+          <p class="designer-credit">
+  Designed &amp; Developed by
+  <span>Rishabh Sharma</span>
+</p>
+
+          <ul class="pillars">
+            <li class="glass reveal" style="--d:120ms"><span class="pillars__num">01</span><div><strong>Visual Storytelling</strong><span>Ideas shaped into clear, emotional narratives.</span></div></li>
+            <li class="glass reveal" style="--d:180ms"><span class="pillars__num">02</span><div><strong>VFX &amp; CGI</strong><span>Digital elements that feel part of the real world.</span></div></li>
+            <li class="glass reveal" style="--d:240ms"><span class="pillars__num">03</span><div><strong>3D Animation</strong><span>Characters, products and worlds in three dimensions.</span></div></li>
+            <li class="glass reveal" style="--d:300ms"><span class="pillars__num">04</span><div><strong>Professional Video Editing</strong><span>Pacing, sound and color that hold attention.</span></div></li>
+            <li class="glass reveal" style="--d:360ms"><span class="pillars__num">05</span><div><strong>Motion Graphics</strong><span>Graphics that move with rhythm and purpose.</span></div></li>
+          </ul>
+        </div>
+
+        <div class="about__visual reveal" style="--d:160ms">
+          <div class="glass about__frame">
+            <!-- Replace this image URL with your own studio photo / still -->
+            <img src="https://picsum.photos/seed/raimotion-about/900/1100" alt="Cinematic placeholder image representing the RAI MOTION studio" width="900" height="1100" loading="lazy" decoding="async">
+          </div>
+          <div class="glass about__badge about__badge--a"><span class="dot" aria-hidden="true"></span> Create</div>
+          <div class="glass about__badge about__badge--b"><span class="dot" aria-hidden="true"></span> Animate</div>
+          <div class="glass about__badge about__badge--c"><span class="dot" aria-hidden="true"></span> Inspire</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== C. SERVICES ===== -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Our Services</p>
+          <h2 class="section__title reveal" id="services-title" style="--d:80ms">Everything your vision <span class="grad">needs to move.</span></h2>
+          <p class="section__sub reveal" style="--d:140ms">Six core disciplines, one cohesive creative studio.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="glass glass-card service-card reveal">
+            <div class="service-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></div>
+            <h3>VFX &amp; CGI</h3>
+            <p>Photoreal composites, digital environments and computer-generated elements that blend seamlessly into live-action footage.</p>
+            <button class="card-link" type="button" data-enquiry="Service enquiry: VFX &amp; CGI">Discuss this service <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </article>
+
+          <article class="glass glass-card service-card reveal" style="--d:80ms">
+            <div class="service-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"/></svg></div>
+            <h3>Video Editing</h3>
+            <p>Story-first editing with precise pacing, sound-aware cuts and polished color finishing for films, ads and social content.</p>
+            <button class="card-link" type="button" data-enquiry="Service enquiry: Video Editing">Discuss this service <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </article>
+
+          <article class="glass glass-card service-card reveal" style="--d:160ms">
+            <div class="service-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l9 5v10l-9 5-9-5V7z"/><path d="M12 12l9-5M12 12v10M12 12L3 7"/></svg></div>
+            <h3>3D Animation</h3>
+            <p>Modeling, rigging, lighting and animation that brings characters, products and entire worlds to life in three dimensions.</p>
+            <button class="card-link" type="button" data-enquiry="Service enquiry: 3D Animation">Discuss this service <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </article>
+
+          <article class="glass glass-card service-card reveal">
+            <div class="service-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l6 3.5-6 3.5z"/></svg></div>
+            <h3>Motion Graphics</h3>
+            <p>Dynamic titles, logo animations and explainer visuals designed to move with rhythm, clarity and style.</p>
+            <button class="card-link" type="button" data-enquiry="Service enquiry: Motion Graphics">Discuss this service <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </article>
+
+          <article class="glass glass-card service-card reveal" style="--d:80ms">
+            <div class="service-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
+            <h3>Visual Effects</h3>
+            <p>Particles, simulations, atmospheric effects and cinematic enhancements that add depth, energy and spectacle.</p>
+            <button class="card-link" type="button" data-enquiry="Service enquiry: Visual Effects">Discuss this service <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </article>
+
+          <article class="glass glass-card service-card reveal" style="--d:160ms">
+            <div class="service-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18z"/><path d="M2 2l7.5 7.5"/><circle cx="11" cy="11" r="2"/></svg></div>
+            <h3>Creative Design</h3>
+            <p>Visual identity, key art and concept design that give every project a distinctive, cohesive look.</p>
+            <button class="card-link" type="button" data-enquiry="Service enquiry: Creative Design">Discuss this service <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== D. OUR WORK / PORTFOLIO ===== -->
+    <!--
+      PLACEHOLDER IMAGES: every <img src="..."> in this section is a royalty-free placeholder from picsum.photos.
+      To use your own work, replace the URL with a local file (e.g. src="images/project-01.jpg")
+      or any other image link. Project titles are placeholders too — rename them.
+    -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Our Work</p>
+          <h2 class="section__title reveal" id="work-title" style="--d:80ms">Selected <span class="grad">projects.</span></h2>
+          <p class="section__sub reveal" style="--d:140ms">A glimpse of the visuals we love to create. Filter by discipline.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="vfx" aria-pressed="false">VFX &amp; CGI</button>
+          <button class="filter-btn" type="button" data-filter="3d" aria-pressed="false">3D Animation</button>
+          <button class="filter-btn" type="button" data-filter="motion" aria-pressed="false">Motion Graphics</button>
+          <button class="filter-btn" type="button" data-filter="editing" aria-pressed="false">Video Editing</button>
+        </div>
+        <p class="sr-only" id="work-status" role="status" aria-live="polite"></p>
+
+        <div class="work-grid" id="work-grid" data-filter="all">
+          <article class="glass work-card work-card--wide reveal" data-category="vfx">
+            <figure class="work-card__media"><img src="https://picsum.photos/seed/raimotion-01/1200/800" alt="Neon Horizon — project thumbnail" width="1200" height="800" loading="lazy" decoding="async"></figure>
+            <div class="work-card__body">
+              <div><p class="work-card__cat">VFX &amp; CGI</p><h3 class="work-card__title">Neon Horizon</h3></div>
+              <button class="work-card__view" type="button" data-lightbox aria-label="View Neon Horizon larger"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></button>
+            </div>
+          </article>
+
+          <article class="glass work-card reveal" data-category="3d" style="--d:80ms">
+            <figure class="work-card__media"><img src="https://picsum.photos/seed/raimotion-02/800/800" alt="Chrome Bloom — project thumbnail" width="800" height="800" loading="lazy" decoding="async"></figure>
+            <div class="work-card__body">
+              <div><p class="work-card__cat">3D Animation</p><h3 class="work-card__title">Chrome Bloom</h3></div>
+              <button class="work-card__view" type="button" data-lightbox aria-label="View Chrome Bloom larger"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></button>
+            </div>
+          </article>
+
+          <article class="glass work-card reveal" data-category="motion">
+            <figure class="work-card__media"><img src="https://picsum.photos/seed/raimotion-03/800/800" alt="Pulse Identity — project thumbnail" width="800" height="800" loading="lazy" decoding="async"></figure>
+            <div class="work-card__body">
+              <div><p class="work-card__cat">Motion Graphics</p><h3 class="work-card__title">Pulse Identity</h3></div>
+              <button class="work-card__view" type="button" data-lightbox aria-label="View Pulse Identity larger"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></button>
+            </div>
+          </article>
+
+          <article class="glass work-card work-card--wide reveal" data-category="editing" style="--d:80ms">
+            <figure class="work-card__media"><img src="https://picsum.photos/seed/raimotion-04/1200/800" alt="Midnight Cut — project thumbnail" width="1200" height="800" loading="lazy" decoding="async"></figure>
+            <div class="work-card__body">
+              <div><p class="work-card__cat">Video Editing</p><h3 class="work-card__title">Midnight Cut</h3></div>
+              <button class="work-card__view" type="button" data-lightbox aria-label="View Midnight Cut larger"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></button>
+            </div>
+          </article>
+
+          <article class="glass work-card reveal" data-category="3d">
+            <figure class="work-card__media"><img src="https://picsum.photos/seed/raimotion-05/800/800" alt="Orbit Sequence — project thumbnail" width="800" height="800" loading="lazy" decoding="async"></figure>
+            <div class="work-card__body">
+              <div><p class="work-card__cat">3D Animation</p><h3 class="work-card__title">Orbit Sequence</h3></div>
+              <button class="work-card__view" type="button" data-lightbox aria-label="View Orbit Sequence larger"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></button>
+            </div>
+          </article>
+
+          <article class="glass work-card reveal" data-category="vfx" style="--d:80ms">
+            <figure class="work-card__media"><img src="https://picsum.photos/seed/raimotion-06/800/800" alt="Signal Break — project thumbnail" width="800" height="800" loading="lazy" decoding="async"></figure>
+            <div class="work-card__body">
+              <div><p class="work-card__cat">VFX &amp; CGI</p><h3 class="work-card__title">Signal Break</h3></div>
+              <button class="work-card__view" type="button" data-lightbox aria-label="View Signal Break larger"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></button>
+            </div>
+          </article>
+
+          <article class="glass work-card reveal" data-category="motion" style="--d:160ms">
+            <figure class="work-card__media"><img src="https://picsum.photos/seed/raimotion-07/800/800" alt="Velvet Frame — project thumbnail" width="800" height="800" loading="lazy" decoding="async"></figure>
+            <div class="work-card__body">
+              <div><p class="work-card__cat">Motion Graphics</p><h3 class="work-card__title">Velvet Frame</h3></div>
+              <button class="work-card__view" type="button" data-lightbox aria-label="View Velvet Frame larger"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== E. COURSES ===== -->
+    <section class="section" id="courses" aria-labelledby="courses-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Courses</p>
+          <h2 class="section__title reveal" id="courses-title" style="--d:80ms">Learn the craft <span class="grad">behind the motion.</span></h2>
+          <p class="section__sub reveal" style="--d:140ms">Three learning paths for aspiring creators. Get in touch to ask about course details.</p>
+        </div>
+
+        <div class="courses__grid">
+          <article class="glass glass-card course-card reveal">
+            <figure class="course-card__media">
+              <img src="https://picsum.photos/seed/raimotion-course1/900/600" alt="Thumbnail for the Professional VFX Editing Course" width="900" height="600" loading="lazy" decoding="async">
+              <span class="course-card__badge">Course</span>
+            </figure>
+            <div class="course-card__body">
+              <h3>Professional VFX Editing Course</h3>
+              <p>Explore the foundations of VFX editing — compositing, tracking, clean-up and effects workflows used in modern productions.</p>
+              <button class="btn btn--ghost" type="button" data-enquiry="Course enquiry: Professional VFX Editing Course">Learn More <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </div>
+          </article>
+
+          <article class="glass glass-card course-card reveal" style="--d:100ms">
+            <figure class="course-card__media">
+              <img src="https://picsum.photos/seed/raimotion-course2/900/600" alt="Thumbnail for the 3D Animation Course" width="900" height="600" loading="lazy" decoding="async">
+              <span class="course-card__badge">Course</span>
+            </figure>
+            <div class="course-card__body">
+              <h3>3D Animation Course</h3>
+              <p>Learn the 3D pipeline from modeling and texturing to lighting, animation and rendering.</p>
+              <button class="btn btn--ghost" type="button" data-enquiry="Course enquiry: 3D Animation Course">Learn More <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </div>
+          </article>
+
+          <article class="glass glass-card course-card reveal" style="--d:200ms">
+            <figure class="course-card__media">
+              <img src="https://picsum.photos/seed/raimotion-course3/900/600" alt="Thumbnail for the Professional Video Editing Course" width="900" height="600" loading="lazy" decoding="async">
+              <span class="course-card__badge">Course</span>
+            </figure>
+            <div class="course-card__body">
+              <h3>Professional Video Editing Course</h3>
+              <p>Build a professional editing workflow covering story structure, pacing, sound, color and final delivery.</p>
+              <button class="btn btn--ghost" type="button" data-enquiry="Course enquiry: Professional Video Editing Course">Learn More <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== F. CONTACT ===== -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow reveal">Contact Us</p>
+          <h2 class="section__title reveal" id="contact-title" style="--d:80ms">Let's create something <span class="grad">extraordinary.</span></h2>
+          <p class="section__sub reveal" style="--d:140ms">Tell us about your project or ask about a course.</p>
+        </div>
+
+        <div class="contact">
+          <aside class="glass contact__info reveal">
+            <h3>Start a conversation</h3>
+            <p>Share a few details about what you have in mind and we will take it from there.</p>
+
+            
+
+            <h4>Follow RAI MOTION</h4>
+            <!-- Replace each href with the studio's real profile URL -->
+            <ul class="socials">
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5v.01"/></svg></a></li>
+              <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="4"/><path d="M10 9.5v5l4.5-2.5z"/></svg></a></li>
+              <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V16M8 7.5v.01M12 16v-5.5M12 13a2.5 2.5 0 015 0v3"/></svg></a></li>
+            </ul>
+          </aside>
+
+          <form class="glass contact__form reveal" id="contact-form" novalidate style="--d:100ms">
+            <input type="hidden" name="access_key" value="e531f0a4-fcc5-4ff5-81e4-9293eb2e8b19">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your full name" aria-describedby="name-error">
+              <p class="field__error" id="name-error"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" aria-describedby="email-error">
+              <p class="field__error" id="email-error"></p>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" required placeholder="What is this about?" aria-describedby="subject-error">
+              <p class="field__error" id="subject-error"></p>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project or question…" aria-describedby="message-error"></textarea>
+              <p class="field__error" id="message-error"></p>
+            </div>
+            <button class="btn btn--primary" type="submit" id="submit-btn">Submit <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="#home" aria-label="RAI MOTION — back to top">
+          <span class="brand__mark" aria-hidden="true"><svg class="icon icon--solid" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></svg></span>
+          <span class="brand__text">RAI <b>MOTION</b></span>
+        </a>
+        <p>A creative studio for VFX, CGI, animation, video editing and motion graphics.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Our Work</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="footer__tag">
+        <h4>Our promise</h4>
+        <p class="grad">CREATE. ANIMATE. INSPIRE.</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>&copy; <span id="year">2026</span> RAI MOTION. All rights reserved.</p>
+      <p>Premium visuals. Beyond imagination.</p>
+      <p class="designer-credit">
+  Designed &amp; Developed by <span>Rishabh Sharma</span>
+</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="to-top glass" id="to-top" type="button" aria-label="Back to top">
+    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- Project preview -->
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-title">
+    <div class="lightbox__inner glass">
+      <button class="lightbox__close" type="button" id="lightbox-close" aria-label="Close preview">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <img id="lightbox-img" alt="" width="1200" height="800">
+      <div class="lightbox__caption">
+        <p id="lightbox-cat"></p>
+        <h3 id="lightbox-title"></h3>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
